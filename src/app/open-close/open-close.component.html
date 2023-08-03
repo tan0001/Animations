@@ -1,0 +1,7 @@
+<nav>
+    <button type="button" (click)="toggle()">Toggle</button>
+</nav>
+
+<div [@openClose]="isOpen ? 'open' : 'closed'" class="open-close-container">
+    <p>Button is {{ isOpen ? 'Open' : 'Closed' }} !!</p>
+</div>
